@@ -1,0 +1,14 @@
+.App {
+  width: 1080px;
+  margin: 0 auto;
+  @media screen and (max-width: 1080px) {
+    width: calc(100% - 10px);
+  }
+  &_loader {
+    margin: 50px auto;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,33 @@
+.DepthList {
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  &_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    &--BIDS {
+      @extend .DepthList_item;
+    }
+    &--ASKS {
+      @extend .DepthList_item;
+      flex-direction: row-reverse;
+    }
+  }
+  &_value {
+    @media screen and (max-width: 450px) {
+      font-size: 12px;
+    }
+    &--BIDS {
+      @extend .DepthList_value;
+      color: #2FB64F;
+    }
+    &--ASKS {
+      @extend .DepthList_value;
+      color: #FF5733;
+    }
+  }
+}

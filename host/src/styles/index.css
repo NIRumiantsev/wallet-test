@@ -1,0 +1,21 @@
+*, *:after, *::before {
+  box-sizing: border-box;
+  font-family: "Roboto Light", sans-serif;
+}
+
+:root {
+  --z-index-header: 2;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+html {
+  background-color: var(--color-bg-default);
+}

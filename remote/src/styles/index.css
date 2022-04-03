@@ -1,0 +1,44 @@
+*, *:after, *::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --z-index-header: 2;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+html {
+  background-color: var(--color-bg-default);
+}
+
+.scrollable-area-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.error {
+  margin-top: 205px;
+}
+
+.loader {
+  margin-top: 30vh;
+}
+
+.Modal {
+  z-index: 1;
+}
+
+.button-custom {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
